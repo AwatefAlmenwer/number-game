@@ -1,0 +1,40 @@
+body{
+    font-size: 18px;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+#container {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #aad5e6;
+    opacity: 0.98;
+
+}
+.panel{
+    max-width: 80%;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #eee;
+}
+button{
+    background-color: #90cce4;
+    height: 48px;
+    width: 80%;
+    margin-bottom: 18px;
+    border-radius: 10px;
+    color:#FFF;
+    font-size: 16px;
+}
+input{
+    border-radius: 10px;
+    height: 60px;
+    width: 80%;
+    text-align: center;
+}
+.activeButton{
+background-color: rgba(60, 157, 196, 0.89);
+}

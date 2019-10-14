@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Guess the number game!</title>
+</head>
+<body onload="init()" >
+    <div id="container">
+        <div class="panel">
+            <h2> اختر رقم عشوائي بين <br> ١- ١٠٠</h2>
+            <h3> اسحب لي تختار؟</h3> <hr>
+
+            <p> : حدد الصعوبة التي تريدها </p>
+            <button id="easyBtn" onclick="easyMode()" class=""> من السهل التخمين في ١٠ محاولات</button>
+            <button id="hardBtn" onclick="hardMode()" class=""> من الصعب التخمين في ٥ محاولات</button>
+            <button id="newGameButton" onclick="newGame()" >لعبة جديدة</button>
+        </div>
+
+        <div class="panel">
+            <h3 id="textOutput"> Enter ادخل تخمينك تحت واضغط </h3>
+            <input type="number" id="inputBox" onchange="compareGuess()"  autocomplete="off">
+            <p> <span id="attempts"></span> : عدد المحاولا ت السابقة </p>
+        </div>
+
+        <div class="panel">
+            <p>  : محاولتك السابقة</p>
+            <p id="guessLog"></p>
+        </div>
+
+    </div> 
+    <script src="main.js"></script>
+</body>
+</html>
